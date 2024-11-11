@@ -7,5 +7,5 @@
 .principal{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 150px 1fr ;
+    grid-template-columns: 150px minmax(120px, 1fr);
 }
