@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100..900&display=swap");
+.header__titulo {
+  font-size: clamp(18px, 5vw, 48px);
+}
+
+.principal {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 1fr;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 25px;
+  align-items: center;
+}
+.footer_redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 25px;
+}/*# sourceMappingURL=main.css.map */
