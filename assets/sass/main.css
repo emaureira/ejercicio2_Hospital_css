@@ -9,6 +9,36 @@
   grid-template-columns: 150px 1fr;
 }
 
+.somos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.somos__tarjeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.figura__leyenda {
+  text-align: center;
+}
+.figura__img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.figura__h4 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 900;
+}
+.figura__h5 {
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
