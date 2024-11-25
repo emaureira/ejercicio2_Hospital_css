@@ -1,12 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100..900&display=swap");
+h1 {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+h2 {
+  font-size: clamp(36px, 5vw, 55px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+h3 {
+  font-size: clamp(32px, 5vw, 50px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+h4 {
+  font-size: clamp(27px, 5vw, 45px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+h5 {
+  font-size: clamp(21px, 5vw, 40px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+h6 {
+  font-size: clamp(16px, 5vw, 35px);
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+p {
+  max-width: 70ch;
+  padding: 16px 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
 .header__titulo {
-  font-size: clamp(18px, 5vw, 48px);
+  font-size: clamp(22px, 5vw, 48px);
+  background: linear-gradient(to bottom, red, rgb(63, 2, 2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__logo {
+  font-size: clamp(22px, 5vw, 48px);
 }
 
 .principal {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 150px minmax(120px, 1fr);
+  grid-template-columns: 180px minmax(120px, 1fr);
+}
+
+.principal {
+  height: 62vh;
+}
+.principal__contenido {
+  overflow: scroll;
+}
+
+.bienvenido-float {
+  float: left;
+  margin-right: 5%;
+}
+
+.menu {
+  list-style-type: none;
+}
+.menu_item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.menu_item-btn {
+  background-color: red;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  box-shadow: 5px 5px 0px 0px black;
+}
+
+.item__link {
+  text-decoration: none;
+  font-size: clamp(18px, 5vw, 20px);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .somos {
@@ -17,6 +105,14 @@
 .somos__tarjeta {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.somos__tarjeta h4 {
+  text-align: center;
+}
+.somos__tarjeta figure {
+  text-align: center;
+  font-size: clamp(22px, 5vw, 35px);
 }
 
 .figura__leyenda {
@@ -44,6 +140,7 @@
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 25px 25px;
   align-items: center;
@@ -53,4 +150,16 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 25px 25px;
+  gap: 24px;
+}
+.footer__direccion {
+  font-size: clamp(20px, 5vw, 30px);
+}
+
+.redesSociales__icono {
+  font-size: clamp(20px, 5vw, 30px);
+}
+
+.icono__link {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

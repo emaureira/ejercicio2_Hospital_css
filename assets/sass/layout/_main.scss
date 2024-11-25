@@ -1,3 +1,40 @@
+.principal{
+  height: 62vh;
+  &__contenido{
+    overflow: scroll;
+  }
+}
+.bienvenido-float{
+    float: left;
+    margin-right: 5%;
+}
+.bienvenido-video{
+   
+   
+}
+.menu{
+    list-style-type: none;
+    &_item{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        &-btn{
+            background-color: red;
+            color: white;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            box-shadow: 5px 5px 0px 0px black;
+        }
+    }
+}
+.item{
+    &__link{
+        text-decoration: none;
+        font-size: clamp(18px,5vw,20px);
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
 .somos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -5,6 +42,14 @@
     &__tarjeta{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    h4{
+        text-align: center;
+    }
+    figure{
+        text-align: center;
+        font-size: clamp(22px, 5vw, 35px);
+    }
     }
    
 }

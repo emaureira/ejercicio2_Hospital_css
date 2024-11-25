@@ -9,23 +9,23 @@
 </head>
 <body>
     <header tabindex="1" class="header">
-        <h1 class="header__titulo">Hospital Nombre</h1>
-        <figure>
-            <img src="" alt="">
-            <figcaption>Servicios Rápidos</figcaption>
+        <figure class="header__logo">
+            <i class="bi bi-hospital"></i>
         </figure>
+        <h1 class="header__titulo">Hospital Nombre</h1>
     </header>
     <main class="principal">
         <aside tabindex="2">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Index</a></li>
-                    <li><a href="equipo.html">Quienes Somos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <nav class="principal__menu">
+                <ul class="menu">
+                    <li class="menu_item"><a class="item__link" href="index.html">Index</a></li>
+                    <li class="menu_item"><a class="item__link" href="equipo.html">Quienes Somos</a></li>
+                    <li class="menu_item"><a class="item__link" href="contacto.html">Contacto</a></li>
+                    <li class="menu_item-btn"><a class="item__link" href="reservar-cita.html">Reservar Cita</a></li>
                 </ul>
             </nav>
         </aside>
-
+        <div class="principal__contenido">
        <section tabindex="4" >
             <h2>Quienes Somos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsa ab rerum minima, hic iusto dolores libero quod odio, id blanditiis expedita natus autem aperiam tenetur? Fugiat ea tempora sit.</p>
@@ -73,17 +73,17 @@
            
            
        </section>
-       
+        </div>
     </main>
     <footer class="footer">
         <section class="footer__direccion">
-            ubicacion #sin Numero, Comuna , Region
+            ubicacion: #sin Numero, Comuna , Region
         </section>
         <section class="footer_redesSociales">
-            <article><i class="bi bi-facebook"></i></article>
-            <article><i class="bi bi-youtube"></i></article>
-            <article><i class="bi bi-instagram"></i></article>
-            <article><a href="tel:+5699999999"><i class="bi bi-telephone"></i> +5699999</a></article>
+            <article class="redesSociales__icono"><i class="bi bi-facebook"></i></article>
+            <article class="redesSociales__icono"><i class="bi bi-youtube"></i></article>
+            <article class="redesSociales__icono"><i class="bi bi-instagram"></i></article>
+            <article class="redesSociales__icono"><a class="icono__link" href="tel:+5699999999"><i class="bi bi-telephone"></i> +5699999</a></article>
         </section>
     </footer>
 </body>
