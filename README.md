@@ -12,3 +12,6 @@ Contiene header, menu lateral, seccion para mostar el contenido y footer
 <li>3.- tener instalado en Visual Studio code las extensiones: Live SASS compiler, Live server</li>
 <li>4.- hacer click con el botoón secundario del mouse sobre archivo index.html y ejecutar Open witch Live Server</li>
 </ul>
+
+<h2>Proyecto</h2>
+<p>Para el proyecto se utilza sass y se crea las carpetas utils, layaout, base y se utiliza la metodología bem para aplicar los estilos</p>
