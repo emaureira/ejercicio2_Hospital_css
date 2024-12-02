@@ -2,16 +2,26 @@
   height: 62vh;
   &__contenido{
     overflow: scroll;
+    margin-left: 1.5rem;
+    &-contacto{
+        display: flex;
+        gap: 2rem;
+        flex-basis: 0;
+        flex-grow: 999;
+        min-width: 40%;
+        overflow: scroll;
+        margin-left: 1.5rem;
+        @include mobile{
+            flex-direction: column;
+        }
+    }
   }
 }
 .bienvenido-float{
     float: left;
     margin-right: 5%;
 }
-.bienvenido-video{
-   
-   
-}
+
 .menu{
     list-style-type: none;
     &_item{
@@ -53,6 +63,22 @@
     }
    
 }
+.contenido{
+    &__mapa{
+        background-color: red;
+        border: 2px red solid;
+      
+        @include tablet{
+           background-color: blue;
+           border: 2px blue solid;
+        }
+        @include mobile{
+            background-color: aqua;
+            border: 2px aqua solid;
+        } 
+    }
+    
+}
 
 .figura{
     &__leyenda{
@@ -62,18 +88,26 @@
     &__img{
         aspect-ratio: 1 / 1;
         border-radius: 50%;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     &__h4{
-        font-size: 1.25rem;
         text-align: center;
         font-weight: 900;
         margin: 0rem;
+        line-height: 4rem;
     }
     &__h5{
-        font-size: 1rem;
         text-align: center;
         font-weight: 700;
+        line-height: 4rem;
     }
+
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin: 1rem 1rem;
 }

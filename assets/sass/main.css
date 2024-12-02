@@ -3,6 +3,7 @@ h1 {
   font-size: clamp(40px, 5vw, 60px);
   margin: 0% 0%;
   padding: 0% 0%;
+  font-family: "Roboto+Slab";
 }
 
 h2 {
@@ -37,7 +38,9 @@ h6 {
 
 p {
   max-width: 70ch;
-  padding: 16px 16px;
+  padding: 8px 16px;
+  margin: 0px 0px;
+  font-family: "Montserrat";
 }
 
 .header {
@@ -46,7 +49,6 @@ p {
   align-items: center;
 }
 .header__titulo {
-  font-size: clamp(22px, 5vw, 48px);
   background: linear-gradient(to bottom, red, rgb(63, 2, 2));
   -webkit-background-clip: text;
   background-clip: text;
@@ -61,12 +63,32 @@ p {
   grid-gap: 10px;
   grid-template-columns: 180px minmax(120px, 1fr);
 }
+@media screen and (max-width: 768px) {
+  .principal {
+    grid-template-columns: auto;
+  }
+}
 
 .principal {
   height: 62vh;
 }
 .principal__contenido {
   overflow: scroll;
+  margin-left: 1.5rem;
+}
+.principal__contenido-contacto {
+  display: flex;
+  gap: 2rem;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 40%;
+  overflow: scroll;
+  margin-left: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .principal__contenido-contacto {
+    flex-direction: column;
+  }
 }
 
 .bienvenido-float {
@@ -115,6 +137,23 @@ p {
   font-size: clamp(22px, 5vw, 35px);
 }
 
+.contenido__mapa {
+  background-color: red;
+  border: 2px red solid;
+}
+@media screen and (max-width: 1024px) {
+  .contenido__mapa {
+    background-color: blue;
+    border: 2px blue solid;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenido__mapa {
+    background-color: aqua;
+    border: 2px aqua solid;
+  }
+}
+
 .figura__leyenda {
   text-align: center;
   margin-top: 0.25rem;
@@ -122,19 +161,28 @@ p {
 .figura__img {
   aspect-ratio: 1/1;
   border-radius: 50%;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 .figura__h4 {
-  font-size: 1.25rem;
   text-align: center;
   font-weight: 900;
   margin: 0rem;
+  line-height: 4rem;
 }
 .figura__h5 {
-  font-size: 1rem;
   text-align: center;
   font-weight: 700;
+  line-height: 4rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 1rem 1rem;
 }
 
 .footer {
